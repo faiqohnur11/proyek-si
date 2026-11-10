@@ -1,0 +1,360 @@
+/* ==========================================
+   1. RESET & PENGATURAN DASAR
+   ========================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF8F5; /* Warna cream hangat */
+    color: #2B2927;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   2. NAVBAR / HEADER (DENGAN LOGO DI SEBELAH TEKS)
+   ========================================== */
+.navbar {
+    background-color: #1C1A17; /* Warna gelap / Charcoal */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Kontainer Logo dan Teks Agar Berjajar ke Samping */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* Jarak antara gambar logo dan teks */
+}
+
+/* Ukuran Gambar Logo */
+.logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.logo-text p {
+    font-size: 0.6rem;
+    color: #AAA;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menu Navigasi Tengah */
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar nav a {
+    color: #CCC;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover, 
+.navbar nav a.active {
+    color: #B88E56; /* Warna aksen gold/cokelat */
+    border-bottom: 2px solid #B88E56;
+    padding-bottom: 4px;
+}
+
+/* Tombol Login Kanan */
+.btn-login {
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #FFF;
+    color: #1C1A17;
+}
+
+/* ==========================================
+   3. HERO SECTION (BANNER TEMA SASTRA & BUKU)
+   ========================================== */
+.hero {
+    /* Menggunakan background foto bertema buku, meja kayu, dan sastra */
+    background: linear-gradient(rgba(28, 26, 23, 0.7), rgba(28, 26, 23, 0.7)), 
+                url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+    height: 450px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+.hero-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #DDD;
+    margin-top: 0.2rem;
+}
+
+.hero-content p {
+    font-style: italic;
+    color: #BBB;
+    margin: 0.8rem 0 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.btn-hero {
+    background-color: #FFF;
+    color: #1C1A17;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #E8E4DE;
+}
+
+/* ==========================================
+   4. KOTAK FITUR / MENU UTAMA (4 GRID)
+   ========================================== */
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #FAF8F5;
+    border-bottom: 1px solid #E8E4DE;
+}
+
+.feature-item {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-right: 1px solid #E8E4DE;
+    transition: background 0.3s;
+}
+
+.feature-item:last-child {
+    border-right: none;
+}
+
+.feature-item:hover {
+    background-color: #F2EDE4;
+}
+
+.feature-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.feature-item p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* ==========================================
+   5. AGENDA TERDEKAT SECTION
+   ========================================== */
+.agenda-section {
+    padding: 3.5rem 5%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8rem;
+}
+
+.section-title h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    border-left: 3px solid #1C1A17;
+    padding-left: 10px;
+}
+
+.section-title a {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.agenda-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.card-agenda {
+    background-color: #FFF;
+    border: 1px solid #E8E4DE;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-agenda:hover {
+    transform: translateY(-3px);
+}
+
+.card-img {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.date-box {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    min-width: 35px;
+}
+
+.date-box .day {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.date-box .month {
+    font-size: 0.7rem;
+    color: #777;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-info h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}
+
+.card-info p {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    background-color: #F0ECE1;
+    font-size: 0.65rem;
+    border-radius: 3px;
+    color: #555;
+}
+
+/* ==========================================
+   6. TENTANG & QUOTE SECTION
+   ========================================== */
+.about-quote-section {
+    padding: 0 5% 4rem 5%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    border-left: 3px solid #1C1A17;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.btn-dark {
+    background-color: #1C1A17;
+    color: #FFF;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.quote-card {
+    background-color: #1C1A17;
+    color: #FFF;
+    padding: 2.5rem;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.quote-card p {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.quote-card span {
+    font-size: 0.75rem;
+    color: #B88E56;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   7. FOOTER
+   ========================================== */
+footer {
+    background-color: #1C1A17;
+    color: #AAA;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================
+   8. RESPONSIVE (UNTUK HP / LAYAR KECIL)
+   ========================================== */
+@media (max-width: 900px) {
+    .features, .agenda-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-quote-section {
+        grid-template-columns: 1fr;
+    }
+    .navbar nav {
+        display: none; /* Sembunyikan menu utama di layar kecil sementara */
+    }
+}

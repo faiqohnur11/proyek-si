@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATASAPA - Komunitas Teater dan Sastra Perwira</title>
+    
+    <!-- Panggil Google Fonts (Playfair Display & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Panggil File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- 1. NAVBAR / HEADER -->
+<header class="navbar">
+    <div class="logo-container">
+        <!-- Tambahkan tag <img> untuk logo di sebelah kiri tulisan -->
+        <img src="assets/logo.png" alt="Logo Katasapa" class="logo-img">
+        <div class="logo-text">
+            <h1>KATASAPA</h1>
+            <p>Komunitas Teater dan Sastra Perwira</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li><a href="#">Karya</a></li>
+            <li><a href="#">Dokumentasi</a></li>
+        </ul>
+    </nav>
+    <div class="nav-btn">
+        <a href="#" class="btn-login">Login</a>
+    </div>
+</header>
+
+    <!-- 2. HERO SECTION (Banner Utama) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>KATASAPA</h2>
+            <h3>Komunitas Teater dan Sastra Perwira</h3>
+            <p>Ruang tumbuh bagi kata, panggung, dan manusia.</p>
+            <a href="#kegiatan" class="btn-hero">Jelajahi Kegiatan &rarr;</a>
+        </div>
+    </section>
+
+    <!-- 3. CARDS NAVIGASI / FITUR -->
+    <section class="features">
+        <div class="feature-item">
+            <h4>Kegiatan</h4>
+            <p>Workshop, pertunjukan, diskusi, dan agenda lainnya.</p>
+        </div>
+        <div class="feature-item">
+            <h4>Karya</h4>
+            <p>Puisi, cerpen, esai, dan naskah teater.</p>
+        </div>
+        <div class="feature-item">
+            <h4>Dokumentasi</h4>
+            <p>Arsip kegiatan dalam bentuk foto dan video.</p>
+        </div>
+        <div class="feature-item">
+            <h4>Tentang Kami</h4>
+            <p>Mengenal lebih dekat KATASAPA.</p>
+        </div>
+    </section>
+
+    <!-- 4. AGENDA TERDEKAT -->
+    <section class="agenda-section" id="kegiatan">
+        <div class="section-title">
+            <h3>Agenda Terdekat</h3>
+            <a href="#">Lihat Semua &rarr;</a>
+        </div>
+        
+        <div class="agenda-grid">
+            <!-- Card Agenda 1 -->
+            <div class="card-agenda">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=400');"></div>
+                <div class="card-body">
+                    <div class="date-box">
+                        <span class="day">25</span>
+                        <span class="month">Okt</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Workshop Dasar Keaktoran</h4>
+                        <p>Gedung Kesenian Purbalingga</p>
+                        <span class="badge">Workshop</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Agenda 2 -->
+            <div class="card-agenda">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=400');"></div>
+                <div class="card-body">
+                    <div class="date-box">
+                        <span class="day">8</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Diskusi Sastra: Menggali Makna</h4>
+                        <p>Taman Literasi Purbalingga</p>
+                        <span class="badge">Diskusi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Agenda 3 -->
+            <div class="card-agenda">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1514306191717-452ec28c7814?q=80&w=400');"></div>
+                <div class="card-body">
+                    <div class="date-box">
+                        <span class="day">20</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Pementasan Teater "Ruang"</h4>
+                        <p>Gedung Kesenian Purbalingga</p>
+                        <span class="badge">Pertunjukan</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Agenda 4 -->
+            <div class="card-agenda">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=400');"></div>
+                <div class="card-body">
+                    <div class="date-box">
+                        <span class="day">27</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Pelatihan Penulisan Kreatif</h4>
+                        <p>Taman Literasi Purbalingga</p>
+                        <span class="badge">Workshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TENTANG & QUOTE (SPLIT SECTION) -->
+    <section class="about-quote-section">
+        <div class="about-text">
+            <h3>Tentang KATASAPA</h3>
+            <p>KATASAPA (Komunitas Teater dan Sastra Perwira) berdiri pada tahun 2016 di Purbalingga, berawal dari sekelompok pemuda yang memiliki kegemaran berteater dan menulis. KATASAPA kini menjadi ruang berkarya, berbagi, dan belajar bagi siapa saja yang mencintai teater dan sastra.</p>
+            <a href="#" class="btn-dark">Baca Selengkapnya &rarr;</a>
+        </div>
+        <div class="quote-card">
+            <p>"Seni dan sastra bukan hanya tentang keindahan, tetapi juga tentang keberanian untuk menyuarakan yang tak terlihat."</p>
+            <span>— KATASAPA</span>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer>
+        <p><strong>KATASAPA</strong> &copy; 2026 KATASAPA. Semua Hak Dilindungi.</p>
+        <p>Instagram: @katasapa_pbg</p>
+    </footer>
+
+</body>
+</html>
